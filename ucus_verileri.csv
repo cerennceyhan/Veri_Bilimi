@@ -1,0 +1,9 @@
+ucus_no,gecikme_dakika,bilet_fiyati
+TK1001,15,5000
+TK1002,0,12000
+TK1003,30,800
+TK1004,10,6500
+TK1005,Hata,4500  # <--- Hatalı veri: Sayı yerine metin
+TK1006,55,YOK     # <--- Hatalı veri: Fiyat yerine metin
+TK1007,20,9500
+TK1008,40,0       # <--- Hatalı veri: Fiyat sıfır (ZeroDivisionError'a yol açabilir, dikkatli olmalıyız)
