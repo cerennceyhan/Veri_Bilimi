@@ -26,17 +26,17 @@ def verileri_isleyip_goster():
 
     try:
         # 'with open' yapısı, dosyanın iş bitince otomatik kapanmasını sağlar.
-        with open(dosya_adi, 'r', encoding='utf-8') as dosya:
+        with open(dosya_adi, 'r', encoding='utf-8') as dosya: #r: okuma modu, encoding utf8: yaygın karakter seti
             
             # İlk satırı (başlıkları) okuyup atla
-            basliklar = next(dosya)
-            print(f"Başlıklar: {basliklar.strip()}")
+            basliklar = next(dosya) #next ile sadece ilk satır okunur
+            print(f"Başlıklar: {basliklar.strip()}") #strip, csv dosyasındaki görünmeyen gizli \n i temizler. 
             print("-" * 30)
             
             for satir in dosya:
                 # Satır sonu karakterini temizle ve virgülle ayır
                 satir = satir.strip()
-                sutunlar = satir.split(',')
+                sutunlar = satir.split(',') #split, "," karakterine göre ayırma yapar
                 
                 # Sütun sayısı kontrolü
                 if len(sutunlar) != 3:
