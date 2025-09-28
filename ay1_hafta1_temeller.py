@@ -1,6 +1,6 @@
 #1-Veri Yapıları: Uçuş Bilgileri Sözlüğü (Dictionary)
 ucus_bilgileri = {
-    "ucus_no": "TK190",
+    "ucus_no": "TK1980",
     "kalkis_yeri": "IST",
     "varis_yeri": "JFK",
     "bilet_fiyatlari_tl": 12500,
